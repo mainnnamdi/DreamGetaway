@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Getaway - Your Next Adventure Awaits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css" /> <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="logo">Dream Getaway</a>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+        <span class="light-icon">☀️</span>
+        <span class="dark-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h1 class="headline">Your Next Adventure Awaits</h1>
+        <p class="subtext">Discover stunning destinations around the globe and create unforgettable memories.</p>
+        <a href="#gallery-section" class="btn-cta">Explore Destinations</a>
+      </div>
+    </section>
+
+    <section class="slider-section" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="section-title">Featured Destinations</h2>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="images/beach.jpg" alt="Tropical Beach Paradise" /></li>
+              <li class="glide__slide"><img src="images/mountain.jpg" alt="Majestic Mountains View" /></li>
+              <li class="glide__slide"><img src="images/city.jpg" alt="Vibrant Cityscape at Night" /></li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir=">" aria-label="Previous slide">◀</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next slide">▶</button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0" aria-label="Go to slide 1"></button>
+            <button class="glide__bullet" data-glide-dir="=1" aria-label="Go to slide 2"></button>
+            <button class="glide__bullet" data-glide-dir="=2" aria-label="Go to slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery-section" class="gallery-section" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="section-title">Our Photo Gallery</h2>
+        <div class="gallery-grid">
+          <a href="images/photo1.jpg" data-lightbox="gallery" data-title="Serene Lake View"><img src="images/lake.jpg" alt="Serene Lake" loading="lazy"></a>
+          <a href="images/photo2.jpg" data-lightbox="gallery" data-title="Historic Moroccan Alley"><img src="images/morroco.jpg" alt="Historic Morocco" loading="lazy"></a>
+          <a href="images/photo3.jpg" data-lightbox="gallery" data-title="Santorini Sunset"><img src="images/santorini.jpg" alt="Santorini Island" loading="lazy"></a>
+          <a href="images/photo4.jpg" data-lightbox="gallery" data-title="Vibrant Market Scene"><img src="images/market.jpg" alt="Vibrant Market" loading="lazy"></a>
+          <a href="images/photo5.jpg" data-lightbox="gallery" data-title="Lush Forest Path"><img src="images/forest.jpg" alt="Lush Forest" loading="lazy"></a>
+          <a href="images/photo6.jpg" data-lightbox="gallery" data-title="Aurora Borealis"><img src="images/aurora.jpg" alt="Northern Lights" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="section-title">Find Us on the Map</h2>
+        <div id="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Dream Getaway. All rights reserved. Powered by Glide.js, Lightbox2, AOS, Leaflet.js</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><img src="images/facebook_11341707.png" alt="Facebook"></a>
+        <a href="#" aria-label="Instagram"><img src="images/insta.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
